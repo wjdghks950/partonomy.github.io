@@ -140,8 +140,8 @@
       <h2 class="section-title"><i class="fas fa-database" style="color: var(--secondary-color); margin-right: 15px;"></i>Benchmark & Task</h2>
 
       <div class="figure-container">
-        <img src="./static/images/partonomy_teaser.png" alt="Explanatory Part Segmentation Overview (placeholder)">
-        <div class="figure-caption"><strong>Figure (placeholder):</strong> PARTONOMY tasks: Part Identification, Part Comparison (Intersection/Difference), and Part–Whole Reasoning. Models must select the correct textual response and ground its parts with pixel masks.</div>
+        <img src="./static/images/partonomy_tasks.png" alt="Explanatory Part Segmentation Overview">
+        <div class="figure-caption"><strong>Figure 1:</strong> PARTONOMY tasks: Part Identification, Part Comparison (Intersection/Difference), and Part-Whole Reasoning. Models must select the correct textual response and ground its parts with pixel masks.</div>
       </div>
 
       <h3 class="section-subtitle">Explanatory Part Segmentation</h3>
@@ -169,13 +169,13 @@
       <h2 class="section-title"><i class="fas fa-cogs" style="color: var(--primary-color); margin-right: 15px;"></i>PLUM: Part-Level Understanding LMM</h2>
 
       <div class="figure-container">
-        <img src="./static/images/plum_overview.png" alt="PLUM Overview (placeholder)">
-        <div class="figure-caption"><strong>Figure (placeholder):</strong> PLUM avoids special tokens via BIO span tagging and conditions on prior masks via a feedback loop.</div>
+        <img src="./static/images/plum_figure.png" alt="PLUM Overview">
+        <div class="figure-caption"><strong>Figure 2:</strong> PLUM avoids special tokens via BIO span tagging and conditions on prior masks via a feedback loop.</div>
       </div>
 
       <h3 class="section-subtitle">Key Ideas</h3>
       <ul style="line-height: 1.9; margin-left: 20px;">
-        <li><strong>Span Tagging (BIO):</strong> selects text spans to segment—no new tokens—preserving the LLM’s pretraining distribution.</li>
+        <li><strong>Span Tagging (BIO):</strong> selects text spans to segment—no new tokens—preserving the LLM's pretraining distribution.</li>
         <li><strong>Query Projection + KL:</strong> projects span embeddings into mask queries with a mild KL constraint to retain language reasoning.</li>
         <li><strong>Mask Feedback Loop:</strong> encodes prior predicted masks (FiLM + pooling) so future masks are consistent and better localized.</li>
       </ul>
